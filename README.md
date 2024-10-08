@@ -11,3 +11,9 @@ Este proyecto consiste en la creación de un Sistema de Gestión de Ventas para 
     Gestión de ventas: Los detalles de cada venta son registrados, actualizando automáticamente el inventario disponible.
     Control de usuarios: Registra información de los clientes para vincularlos a sus respectivas compras.
     Reportes de ventas: Genera reportes sobre marcas más vendidas, cantidad de prendas vendidas y el inventario restante.
+
+
+
+    ## 📊 Diagrama Entidad-Relación (ER)
+
+![Diagrama ER](./imagenes/diagrama_bd.png)
