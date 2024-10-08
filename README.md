@@ -14,6 +14,6 @@ Este proyecto consiste en la creación de un Sistema de Gestión de Ventas para 
 
 
 
-    ## 📊 Diagrama Entidad-Relación (ER)
+📊 Diagrama 
 
 ![Diagrama ER](./imagenes/diagrama_bd.png)
