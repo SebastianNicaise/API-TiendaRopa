@@ -308,3 +308,30 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+--Consultas 
+SELECT 
+    v.fecha_venta,
+    SUM(dv.cantidad) AS total_prendas_vendidas
+FROM 
+    ventas v
+JOIN 
+    detalles_venta dv ON v.id = dv.venta_id
+WHERE 
+    DATE(v.fecha_venta) = '2024-06-20'
+GROUP BY 
+    v.fecha_venta;
+
+
+
+
+UPDATE usuarios
+SET nombre = 'Juan Pérez Actualizado', 
+    correo = 'juanperez_actualizado@example.com'
+WHERE id = 2;  -- Cambia el ID al cliente que deseas actualizar
+
+
+DELETE FROM usuarios
+WHERE id = 1;
