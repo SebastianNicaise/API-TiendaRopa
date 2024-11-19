@@ -17,3 +17,63 @@ Este proyecto consiste en la creación de un Sistema de Gestión de Ventas para 
 📊 Diagrama 
 
 ![Diagrama ER](./imagenes/diagrama_bd.png)
+
+# End-points
+
+Método Get:
+Obtener usuario por ID:
+http://localhost/apiProyecto/public/index.php/usuarios?{id}
+
+Obtener todos los usuarios:
+http://localhost/apiProyecto/public/index.php/usuarios
+
+Obtener ventas por ID:
+http://localhost/apiProyecto/public/index.php/ventas?{id}
+
+Obtener todas las ventas:
+http://localhost/apiProyecto/public/index.php/ventas
+
+Obtener productos por ID:
+http://localhost/apiProyecto/public/index.php/ventas?{id}
+
+Obtener todos los productos:
+http://localhost/apiProyecto/public/index.php/productos
+
+Obtener marcas por ID:
+http://localhost/apiProyecto/public/index.php/marcas?{id}
+
+Obtener todas las marcas:
+http://localhost/apiProyecto/public/index.php/marcas
+
+Obtener detalles de ventas por ID:
+http://localhost/apiProyecto/public/index.php/detalles?{id}
+
+Obtener todos los detalles de las ventas:
+http://localhost/apiProyecto/public/index.php/detalles
+
+//Reportes
+Obtener Top 5 marcas:
+http://localhost/apiProyecto/public/index.php/topMarcas
+
+Obtener marcas con Ventas:
+http://localhost/apiProyecto/public/index.php/marcasVentas
+
+Obtenerprendas en stock:
+http://localhost/apiProyecto/public/index.php/prendasStock
+
+Método POST:
+
+Insertar nuevo usuario: 
+http://localhost/apiProyecto/public/index.php/usuarios
+
+Insertar producto: 
+http://localhost/apiProyecto/public/index.php/productos
+
+Insertar nueva venta: 
+http://localhost/apiProyecto/public/index.php/ventas
+
+Insertar nueva marca: 
+http://localhost/apiProyecto/public/index.php/marcas
+
+Insertar nuevo detalle de venta: 
+http://localhost/apiProyecto/public/index.php/detalles
