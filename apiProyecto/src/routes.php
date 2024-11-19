@@ -99,7 +99,7 @@ if ($path == "usuarios") {
                     if($id==null){
                         $productoController ->allProducts();
                     }else{
-                        $productoController ->productsByIdById($id);
+                        $productoController ->productsById($id);
                     }
                     break;
                 case 'POST':
@@ -160,6 +160,15 @@ if ($path == "usuarios") {
                         default:
                             Response::json(['error' => 'Metodo no permitido'], 405);
                     }
+                }elseif ($path == "topMarcas") {
+                    $topMarcaController = New topMarcasController;
+                        switch ($method) {
+                            case 'GET':
+                                    $topMarcaController ->allTopBrands();
+                                break;
+                            default:
+                                Response::json(['error' => 'Metodo no permitido'], 405);
+                        }
                 }elseif ($path == "marcasVentas") {
                     $marcasVentaController = New marcasVentasController;
                         switch ($method) {
