@@ -37,4 +37,9 @@ class productosController{
         }
     }
 
+    public function updateProduct($id){
+        $data= json_decode(file_get_contents("php://input"),true);
+        echo json_encode([$this->modeloproducto->actualizarProducto($id, $data)]);
+    }
+
 }

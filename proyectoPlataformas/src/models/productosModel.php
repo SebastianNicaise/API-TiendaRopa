@@ -32,6 +32,15 @@ public function productoPorId($id){
         $consulta = $this->db->connect()->prepare("DELETE FROM productos WHERE id = ?");
         return $consulta->execute([$id]);
     }
+
+    public function actualizarProducto($id, $data){
+        $consulta = $this->db->connect()->prepare("UPDATE productos SET nombre=?, descripcion=?, precio=?, stock=?, marca_id=?, imagen_url=? WHERE id=?" );
+        $consulta->execute([$data['nombre'], $data['descripcion'], $data['precio'], $data['stock'], $data['marca_id'], $data['imagen_url'], $id]);
+        return $consulta->rowCount();
+    }   
+
+
+    
     
 
     }

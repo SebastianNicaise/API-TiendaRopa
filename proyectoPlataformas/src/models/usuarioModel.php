@@ -21,8 +21,8 @@ public function usuarioPorId($id){
 
     }
     public function nuevoUsuario($data) {
-        $inserta = $this->db->connect()->prepare("INSERT INTO usuarios (nombre, correo, contraseña, telefono, direccion, fecha_registro) VALUES (?, ?, ?, ?, ?, ?)");
-        $inserta->execute([$data['nombre'], $data['correo'], $data['contraseña'], $data['telefono'], $data['direccion'], $data['fecha_registro']]);
+        $consulta = $this->db->connect()->prepare("INSERT INTO usuarios (nombre, correo, contraseña, telefono, direccion, fecha_registro) VALUES (?, ?, ?, ?, ?, ?)");
+        $consulta->execute([$data['nombre'], $data['correo'], $data['contraseña'], $data['telefono'], $data['direccion'], $data['fecha_registro']]);
         return ['id' => $this->db->connect()->lastInsertId()];
     }
 
@@ -32,7 +32,12 @@ public function usuarioPorId($id){
         $consulta = $this->db->connect()->prepare("DELETE FROM usuarios WHERE id = ?");
         return $consulta->execute([$id]);
     }
-    
+
+    public function actualizarUsuario($id, $data){
+        $consulta = $this->db->connect()->prepare("UPDATE usuarios SET nombre=?, correo=?, contraseña=?, telefono=?, direccion=?, fecha_registro=? WHERE id=?" );
+        $consulta->execute([$data['nombre'], $data['correo'], $data['contraseña'], $data['telefono'], $data['direccion'], $data['fecha_registro'], $id]);
+        return $consulta->rowCount();
+    }    
 
     }
 

@@ -20,4 +20,9 @@ class detallesController{
         echo json_encode($this->modelodetalle->nuevodetalle($data));
     }
 
+    public function updateDetail($id){
+        $data= json_decode(file_get_contents("php://input"),true);
+        echo json_encode([$this->modelodetalle->actualizarDetalle($id, $data)]);
+    }
+
 }

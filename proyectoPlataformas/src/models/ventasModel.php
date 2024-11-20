@@ -26,6 +26,12 @@ public function ventaPorId($id){
         return ['id' => $this->db->connect()->lastInsertId()];
     }
 
+    public function actualizarVenta($id, $data){
+        $consulta = $this->db->connect()->prepare("UPDATE ventas SET usuario_id=?, fecha_venta=?, total=? WHERE id=?" );
+        $consulta->execute([$data['usuario_id'], $data['fecha_venta'], $data['total'], $id]);
+        return $consulta->rowCount();
+    }   
+
     }
 
     

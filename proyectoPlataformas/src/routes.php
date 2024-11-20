@@ -61,7 +61,7 @@ if ($path == "usuarios") {
             $usuarioController->postUser();
             break;
         case 'PUT':
-            $usuarioController->put($id);
+            $usuarioController->updateUser($id);
             break;
         case 'DELETE':
             $usuarioController->delete($id);
@@ -83,7 +83,7 @@ if ($path == "usuarios") {
                 $ventaController->postSale();
                 break;
             case 'PUT':
-                $ventaController->put($id);
+                $ventaController->updateSale($id);
                 break;
             case 'DELETE':
                 $ventaController->delete($id);
@@ -106,7 +106,7 @@ if ($path == "usuarios") {
                     $productoController->postProduct();
                     break;
                 case 'PUT':
-                    $productoController->put($id);
+                    $productoController->updateProduct($id);
                     break;
                 case 'DELETE':
                     $productoController->delete($id);
@@ -129,7 +129,7 @@ if ($path == "usuarios") {
                         $marcaController->postBrand();
                         break;
                     case 'PUT':
-                        $marcaController->put($id);
+                        $marcaController->updateBrand($id);
                         break;
                     case 'DELETE':
                         $marcaController->delete($id);
@@ -152,7 +152,7 @@ if ($path == "usuarios") {
                             $detalleController->postDetail();
                             break;
                         case 'PUT':
-                            $detalleController->put($id);
+                            $detalleController->updateDetail($id);
                             break;
                         case 'DELETE':
                             $detalleController->delete($id);

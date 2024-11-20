@@ -20,4 +20,10 @@ class ventasController{
         echo json_encode($this->modeloVenta->nuevaVenta($data));
     }
 
+    public function updateSale($id){
+        $modeloVentas=new venta;
+        $data= json_decode(file_get_contents("php://input"),true);
+        echo json_encode(["Resultado"=> $modeloVentas->actualizarVenta($id, $data)]);
+    }
+
 }

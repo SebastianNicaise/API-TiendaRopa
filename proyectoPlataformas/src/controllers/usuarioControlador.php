@@ -36,6 +36,11 @@ class usuarioController{
             echo json_encode(['error' => 'Usuario no encontrado o no se pudo eliminar']);
         }
     }
-    
+
+    public function updateUser($id){
+        $modeloUsuario=new usuario;
+        $data= json_decode(file_get_contents("php://input"),true);
+        echo json_encode(["Resultado"=> $modeloUsuario->actualizarUsuario($id, $data)]);
+    }
 
 }

@@ -26,6 +26,12 @@ public function detallePorId($id){
         return ['id' => $this->db->connect()->lastInsertId()];
     }
 
+    public function actualizarDetalle($id, $data){
+        $consulta = $this->db->connect()->prepare("UPDATE detalles_venta SET venta_id=?, producto_id=?, cantidad=?, precio_unitario=? WHERE id=?" );
+        $consulta->execute([$data['venta_id'], $data['producto_id'], $data['cantidad'], $data['precio_unitario'], $id]);
+        return $consulta->rowCount();
+    }
+
     }
 
     

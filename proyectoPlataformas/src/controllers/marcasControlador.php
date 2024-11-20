@@ -36,6 +36,11 @@ class marcasController{
             echo json_encode(['error' => 'Marca no encontrada o no se pudo eliminar']);
         }
     }
+
+    public function updateBrand($id){
+        $data= json_decode(file_get_contents("php://input"),true);
+        echo json_encode([$this->modelomarca->actualizarMarca($id, $data)]);
+    }
     
     
 

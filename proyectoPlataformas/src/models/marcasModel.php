@@ -34,7 +34,13 @@ public function marcaPorId($id){
     }
     
 
+    public function actualizarMarca($id, $data){
+        $consulta = $this->db->connect()->prepare("UPDATE marcas SET nombre=?, descripcion=? WHERE id=?" );
+        $consulta->execute([$data['nombre'], $data['descripcion'], $id]);
+        return $consulta->rowCount();
+    }   
     }
+    
 
     
 ?>
