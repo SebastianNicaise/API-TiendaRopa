@@ -77,3 +77,32 @@ http://localhost/apiProyecto/public/index.php/marcas
 
 Insertar nuevo detalle de venta: 
 http://localhost/apiProyecto/public/index.php/detalles
+
+Método DELETE:
+
+Eliminar usuario
+http://localhost/apiProyecto/public/index.php/usuarios?{id}
+
+Eliminar producto
+http://localhost/apiProyecto/public/index.php/productos?{id}
+
+Eliminar marca
+http://localhost/apiProyecto/public/index.php/marcas?{id}
+
+Método PUT:
+
+Actualizar usuario
+http://localhost/apiProyecto/public/index.php/usuarios?{id}
+
+Actualizar productos
+http://localhost/apiProyecto/public/index.php/productos?{id}
+
+Actualizar ventas
+http://localhost/apiProyecto/public/index.php/ventas?{id}
+
+Actualizar marcas
+http://localhost/apiProyecto/public/index.php/marcas?{id}
+
+Actualizar detalles
+http://localhost/apiProyecto/public/index.php/detalles?{id}
+
