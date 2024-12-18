@@ -184,6 +184,19 @@ Al apuntar a este endpoint, se mostrará información de las prendas en stock, a
 Método POST:
 
 Insertar nuevo usuario: http://localhost/proyectoPlataformas/public/index.php/usuarios
+Al apuntar a este endpoint, se debe proporcionar información para insertar un nuevo campo, en este caso, a modo explicativo, se hará a modo de objeto JSON con fotos de su inserción exitosa y respuesta del servidor.
+"usuarios": {
+    "nombre": "Juan Pérez",
+    "correo": "juan.perez@example.com",
+    "contraseña": "contraseña123",
+    "telefono": "1234567890",
+    "direccion": "Calle Falsa 123",
+    "fecha_registro": "2024-12-18 12:00:00"
+  }
+![image](https://github.com/user-attachments/assets/0733206a-4725-4e34-b912-fa5411d17ec7) Respuesta del servidor
+![image](https://github.com/user-attachments/assets/c97a5a2a-10df-4817-a636-97e8528249d8) Insert añadido a la base de datos
+
+
 
 Insertar producto: http://localhost/proyectoPlataformas/public/index.php/productos
 
