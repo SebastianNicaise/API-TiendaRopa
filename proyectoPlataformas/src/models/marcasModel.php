@@ -35,11 +35,26 @@ public function marcaPorId($id){
     
 
     public function actualizarMarca($id, $data){
-        $consulta = $this->db->connect()->prepare("UPDATE marcas SET nombre=?, descripcion=? WHERE id=?" );
-        $consulta->execute([$data['nombre'], $data['descripcion'], $id]);
-        return $consulta->rowCount();
-    }   
+        // Verificar que se recibieron los datos correctamente
+        if (isset($data['nombre'], $data['descripcion']) && !empty($data['nombre']) && !empty($data['descripcion'])) {
+            // Proceder con la actualización solo si los datos son válidos
+            try {
+                $consulta = $this->db->connect()->prepare("UPDATE marcas SET nombre=?, descripcion=? WHERE id=?" );
+                $consulta->execute([$data['nombre'], $data['descripcion'], $id]);
+    
+                // Retornar el número de filas afectadas (si es 0, significa que no hubo cambios)
+                return $consulta->rowCount();
+            } catch (PDOException $e) {
+                // Si ocurre algún error en la consulta, capturarlo y retornar un mensaje de error
+                return 'Error en la consulta: ' . $e->getMessage();
+            }
+        } else {
+            // Si no se recibieron los datos correctamente, retornar 0
+            return 0;
+        }
     }
+
+}
     
 
     

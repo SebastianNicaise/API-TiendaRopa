@@ -29,7 +29,6 @@ $path = isset($_SERVER['PATH_INFO']) ? trim($_SERVER['PATH_INFO'], '/') : includ
 //importante anexar el /index.php/+Path utilizado
 //por ejemplo: http://localhost/practica2/public/index.php/prueba 
 
-echo $path;
 //Mostramos el final de la url
 
 // Divide la ruta por "/" para obtener el endpoint y el posible parámetro
@@ -161,10 +160,10 @@ if ($path == "usuarios") {
                             Response::json(['error' => 'Metodo no permitido'], 405);
                     }
                 }elseif ($path == "topMarcas") {
-                    $topMarcaController = New topMarcasController;
+                    $topMarcasController = New topMarcasController;
                         switch ($method) {
                             case 'GET':
-                                    $topMarcaController ->allTopBrands();
+                                    $topMarcasController ->allTopBrands();
                                 break;
                             default:
                                 Response::json(['error' => 'Metodo no permitido'], 405);

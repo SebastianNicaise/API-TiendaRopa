@@ -27,9 +27,26 @@ public function detallePorId($id){
     }
 
     public function actualizarDetalle($id, $data){
-        $consulta = $this->db->connect()->prepare("UPDATE detalles_venta SET venta_id=?, producto_id=?, cantidad=?, precio_unitario=? WHERE id=?" );
-        $consulta->execute([$data['venta_id'], $data['producto_id'], $data['cantidad'], $data['precio_unitario'], $id]);
-        return $consulta->rowCount();
+        // Verificar que se recibieron los datos correctamente
+        if (isset($data['venta_id'], $data['producto_id'], $data['cantidad'], $data['precio_unitario']) &&
+            !empty($data['venta_id']) && !empty($data['producto_id']) && !empty($data['cantidad']) && !empty($data['precio_unitario'])) {
+    
+            // Proceder con la actualización solo si los datos son válidos
+            try {
+                $consulta = $this->db->connect()->prepare("UPDATE detalles_venta SET venta_id=?, producto_id=?, cantidad=?, precio_unitario=? WHERE id=?" );
+                $consulta->execute([$data['venta_id'], $data['producto_id'], $data['cantidad'], $data['precio_unitario'], $id]);
+    
+                // Retornar el número de filas afectadas
+                return $consulta->rowCount();
+            } catch (PDOException $e) {
+                // Si ocurre un error en la consulta, capturarlo y retornar un mensaje de error
+                return 'Error en la consulta: ' . $e->getMessage();
+            }
+    
+        } else {
+            // Si no se recibieron los datos correctamente, retornar 0
+            return 0;
+        }
     }
 
     }
