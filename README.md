@@ -19,86 +19,63 @@ Este proyecto consiste en la creación de un Sistema de Gestión de Ventas para 
 ![Diagrama ER](./imagenes/diagrama_bd.png)
 
 # End-points
+Método Get: Obtener usuario por ID: http://localhost/proyectoPlataformas/public/index.php/usuarios?{id}
 
-Método Get:
-Obtener usuario por ID:
-http://localhost/apiProyecto/public/index.php/usuarios?{id}
+Obtener todos los usuarios: http://localhost/proyectoPlataformas/public/index.php/usuarios
 
-Obtener todos los usuarios:
-http://localhost/apiProyecto/public/index.php/usuarios
+Obtener ventas por ID: http://localhost/proyectoPlataformas/public/index.php/ventas?{id}
 
-Obtener ventas por ID:
-http://localhost/apiProyecto/public/index.php/ventas?{id}
+Obtener todas las ventas: http://localhost/proyectoPlataformas/public/index.php/ventas
 
-Obtener todas las ventas:
-http://localhost/apiProyecto/public/index.php/ventas
+Obtener productos por ID: http://localhost/proyectoPlataformas/public/index.php/ventas?{id}
 
-Obtener productos por ID:
-http://localhost/apiProyecto/public/index.php/ventas?{id}
+Obtener todos los productos: http://localhost/proyectoPlataformas/public/index.php/productos
 
-Obtener todos los productos:
-http://localhost/apiProyecto/public/index.php/productos
+Obtener marcas por ID: http://localhost/proyectoPlataformas/public/index.php/marcas?{id}
 
-Obtener marcas por ID:
-http://localhost/apiProyecto/public/index.php/marcas?{id}
+Obtener todas las marcas: http://localhost/proyectoPlataformas/public/index.php/marcas
 
-Obtener todas las marcas:
-http://localhost/apiProyecto/public/index.php/marcas
+Obtener detalles de ventas por ID: http://localhost/proyectoPlataformas/public/index.php/detalles?{id}
 
-Obtener detalles de ventas por ID:
-http://localhost/apiProyecto/public/index.php/detalles?{id}
+Obtener todos los detalles de las ventas: http://localhost/proyectoPlataformas/public/index.php/detalles
 
-Obtener todos los detalles de las ventas:
-http://localhost/apiProyecto/public/index.php/detalles
+//Reportes Obtener Top 5 marcas: http://localhost/proyectoPlataformas/public/index.php/topMarcas
 
-//Reportes
-Obtener Top 5 marcas:
-http://localhost/apiProyecto/public/index.php/topMarcas
+Obtener marcas con Ventas: http://localhost/proyectoPlataformas/public/index.php/marcasVentas
 
-Obtener marcas con Ventas:
-http://localhost/apiProyecto/public/index.php/marcasVentas
-
-Obtenerprendas en stock:
-http://localhost/apiProyecto/public/index.php/prendasStock
+Obtenerprendas en stock: http://localhost/proyectoPlataformas/public/index.php/prendasStock
 
 Método POST:
 
-Insertar nuevo usuario: 
-http://localhost/apiProyecto/public/index.php/usuarios
+Insertar nuevo usuario: http://localhost/proyectoPlataformas/public/index.php/usuarios
 
-Insertar producto: 
-http://localhost/apiProyecto/public/index.php/productos
+Insertar producto: http://localhost/proyectoPlataformas/public/index.php/productos
 
-Insertar nueva venta: 
-http://localhost/apiProyecto/public/index.php/ventas
+Insertar nueva venta: http://localhost/proyectoPlataformas/public/index.php/ventas
 
-Insertar nueva marca: 
-http://localhost/apiProyecto/public/index.php/marcas
+Insertar nueva marca: http://localhost/proyectoPlataformas/public/index.php/marcas
 
-Insertar nuevo detalle de venta: 
-http://localhost/apiProyecto/public/index.php/detalles
+Insertar nuevo detalle de venta: http://localhost/proyectoPlataformas/public/index.php/detalles
 
 Método DELETE:
 
-Eliminar usuario
-http://localhost/apiProyecto/public/index.php/usuarios?{id}
+Eliminar usuario http://localhost/proyectoPlataformas/public/index.php/usuarios?{id}
 
-Eliminar producto
-http://localhost/apiProyecto/public/index.php/productos?{id}
+Eliminar producto http://localhost/proyectoPlataformas/public/index.php/productos?{id}
 
-Eliminar marca
-http://localhost/apiProyecto/public/index.php/marcas?{id}
+Eliminar marca http://localhost/proyectoPlataformas/public/index.php/marcas?{id}
 
 Método PUT:
 
-Actualizar usuario
-http://localhost/apiProyecto/public/index.php/usuarios?{id}
+Actualizar usuario http://localhost/proyectoPlataformas/public/index.php/usuarios?{id}
 
-Actualizar productos
-http://localhost/apiProyecto/public/index.php/productos?{id}
+Actualizar productos http://localhost/proyectoPlataformas/public/index.php/productos?{id}
 
-Actualizar ventas
-http://localhost/apiProyecto/public/index.php/ventas?{id}
+Actualizar ventas http://localhost/proyectoPlataformas/public/index.php/ventas?{id}
+
+Actualizar marcas http://localhost/proyectoPlataformas/public/index.php/marcas?{id}
+
+Actualizar detalles http://localhost/proyectoPlataformas/public/index.php/detalles?{id}
 
 Actualizar marcas
 http://localhost/apiProyecto/public/index.php/marcas?{id}
