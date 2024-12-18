@@ -241,11 +241,20 @@ Al apuntar a este endpoint, se debe proporcionar información para insertar un n
 
 Método DELETE:
 
-Eliminar usuario http://localhost/proyectoPlataformas/public/index.php/usuarios?{id}
+Eliminar usuario http://localhost/proyectoPlataformas/public/index.php/usuarios?id=2
+Al enviar como parámetro del id del usuario, se hará una eliminación del cual corresponda a ese id
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/2c426896-4e4b-4379-804e-021064e19a90)
 
-Eliminar producto http://localhost/proyectoPlataformas/public/index.php/productos?{id}
 
-Eliminar marca http://localhost/proyectoPlataformas/public/index.php/marcas?{id}
+Eliminar producto http://localhost/proyectoPlataformas/public/index.php/productos?id=4
+Al enviar como parámetro del id del producto, se hará una eliminación del cual corresponda a ese id
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/08f9a0e6-cd70-4c20-979f-01f33f947258)
+
+
+Eliminar marca http://localhost/proyectoPlataformas/public/index.php/marcas?id=2
+Al enviar como parámetro del id de la marca, se hará una eliminación de la cual corresponda a ese id
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/0b6c4c9e-a994-4eea-a691-9bd761209816)
+
 
 Método PUT:
 
@@ -258,10 +267,4 @@ Actualizar ventas http://localhost/proyectoPlataformas/public/index.php/ventas?{
 Actualizar marcas http://localhost/proyectoPlataformas/public/index.php/marcas?{id}
 
 Actualizar detalles http://localhost/proyectoPlataformas/public/index.php/detalles?{id}
-
-Actualizar marcas
-http://localhost/apiProyecto/public/index.php/marcas?{id}
-
-Actualizar detalles
-http://localhost/apiProyecto/public/index.php/detalles?{id}
 
