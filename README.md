@@ -199,12 +199,45 @@ Al apuntar a este endpoint, se debe proporcionar información para insertar un n
 
 
 Insertar producto: http://localhost/proyectoPlataformas/public/index.php/productos
-
+Al apuntar a este endpoint, se debe proporcionar información para insertar un nuevo campo, en este caso, a modo explicativo, se hará a modo de objeto JSON con fotos de su inserción exitosa y respuesta del servidor.
+    "nombre": "Producto A",
+    "descripcion": "Descripción del Producto A",
+    "precio": 50.00,
+    "stock": 100,
+    "marca_id": 1,
+    "imagen_url": "https://example.com/producto_a.jpg"
+    ![image](https://github.com/user-attachments/assets/c99ebd1e-dd22-49ab-a745-c85df36e10f6) respuesta del servidor
+    ![image](https://github.com/user-attachments/assets/87f6a437-8517-4481-9acc-68d63bdc16ea) prueba de inserción
+    
 Insertar nueva venta: http://localhost/proyectoPlataformas/public/index.php/ventas
+Al apuntar a este endpoint, se debe proporcionar información para insertar un nuevo campo, en este caso, a modo explicativo, se hará a modo de objeto JSON con fotos de su inserción exitosa y respuesta del servidor.
+"ventas": {
+    "usuario_id": 1,
+    "fecha_venta": "2024-12-18 12:30:00",
+    "total": 100.00
+  }
+  ![image](https://github.com/user-attachments/assets/9c2a8c91-5087-4515-bddb-67cd9c8777bd) respuesta del servidor
+  ![image](https://github.com/user-attachments/assets/467a59d2-47c3-4877-a730-11b422a33567) pruebas de inserción
 
 Insertar nueva marca: http://localhost/proyectoPlataformas/public/index.php/marcas
+Al apuntar a este endpoint, se debe proporcionar información para insertar un nuevo campo, en este caso, a modo explicativo, se hará a modo de objeto JSON con fotos de su inserción exitosa y respuesta del servidor.
+{
+    "nombre": "Marca X",
+    "descripcion": "Descripción de Marca X"
+  }
+  ![image](https://github.com/user-attachments/assets/2052d4ce-f399-4b60-81a3-86b82bc8203e) respuesta del servidor
+  ![image](https://github.com/user-attachments/assets/7eda38d8-b451-4118-9cc6-2ae19044f39a) prueba de inserción
 
 Insertar nuevo detalle de venta: http://localhost/proyectoPlataformas/public/index.php/detalles
+Al apuntar a este endpoint, se debe proporcionar información para insertar un nuevo campo, en este caso, a modo explicativo, se hará a modo de objeto JSON con fotos de su inserción exitosa y respuesta del servidor.
+{
+    "venta_id": 1,
+    "producto_id": 1,
+    "cantidad": 2,
+    "precio_unitario": 15.50
+  }
+  ![image](https://github.com/user-attachments/assets/c6540f6e-03ba-41b1-8d5c-22eec3eb2e54) respuesta del servidor 
+  ![image](https://github.com/user-attachments/assets/5dfa2fce-d4f9-476c-8a7a-23f278825623) prueba de inserción
 
 Método DELETE:
 
