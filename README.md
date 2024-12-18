@@ -258,13 +258,58 @@ respuesta del servidor: ![image](https://github.com/user-attachments/assets/0b6c
 
 Método PUT:
 
-Actualizar usuario http://localhost/proyectoPlataformas/public/index.php/usuarios?{id}
+Actualizar usuario http://localhost/proyectoPlataformas/public/index.php/usuarios?id=2
+Al enviar como parámetro el id del registro elegido, seguido de la nueva información se actualizará, por cuestiones de ejemplo, se mostrará a modo de objeto JSON, con la respuesta del servidor.
+{
+    "nombre": "Juan Pérez",
+    "correo": "juan.perez@eeeexample.com",
+    "contraseña": "contraseña123",
+    "telefono": "0987654321",
+    "direccion": "Nueva dirección 456",
+    "fecha_registro": "2024-12-18 12:00:00"
+  }
+  respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14fefae-bcda-45f0-95d7-eed0a4b68f02)
 
-Actualizar productos http://localhost/proyectoPlataformas/public/index.php/productos?{id}
 
-Actualizar ventas http://localhost/proyectoPlataformas/public/index.php/ventas?{id}
+Actualizar productos http://localhost/proyectoPlataformas/public/index.php/productos?id=2
+Al enviar como parámetro el id del registro elegido, seguido de la nueva información se actualizará, por cuestiones de ejemplo, se mostrará a modo de objeto JSON, con la respuesta del servidor.
+{
+    "nombre": "Producto A",
+    "descripcion": "Producto A con mejoras",
+    "precio": 55.00,
+    "stock": 90,
+    "marca_id": 1,
+    "imagen_url": "https://example.com/producto_a.jpg"
+  }
 
-Actualizar marcas http://localhost/proyectoPlataformas/public/index.php/marcas?{id}
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14fefae-bcda-45f0-95d7-eed0a4b68f02)
 
-Actualizar detalles http://localhost/proyectoPlataformas/public/index.php/detalles?{id}
+Actualizar ventas http://localhost/proyectoPlataformas/public/index.php/ventas?id=2
+Al enviar como parámetro el id del registro elegido, seguido de la nueva información se actualizará, por cuestiones de ejemplo, se mostrará a modo de objeto JSON, con la respuesta del servidor.
+{
+    "usuario_id": 1,
+    "fecha_venta": "2024-12-18 12:30:00",
+    "total": 110.00
+  }
+
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14fefae-bcda-45f0-95d7-eed0a4b68f02)
+
+Actualizar marcas http://localhost/proyectoPlataformas/public/index.php/marcas?id=2
+Al enviar como parámetro el id del registro elegido, seguido de la nueva información se actualizará, por cuestiones de ejemplo, se mostrará a modo de objeto JSON, con la respuesta del servidor.
+ {
+    "nombre": "Marca X",
+    "descripcion": "Descripción actualizada de Marca X"
+  }
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14fefae-bcda-45f0-95d7-eed0a4b68f02)
+
+Actualizar detalles http://localhost/proyectoPlataformas/public/index.php/detalles?id=2
+Al enviar como parámetro el id del registro elegido, seguido de la nueva información se actualizará, por cuestiones de ejemplo, se mostrará a modo de objeto JSON, con la respuesta del servidor.
+ {
+    "venta_id": 1,
+    "producto_id": 1,
+    "cantidad": 3,
+    "precio_unitario": 16.00
+  }
+
+respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14fefae-bcda-45f0-95d7-eed0a4b68f02)
 
