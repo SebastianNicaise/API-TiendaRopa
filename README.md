@@ -243,9 +243,6 @@ respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14f
 
 respuesta del servidor: ![image](https://github.com/user-attachments/assets/e14fefae-bcda-45f0-95d7-eed0a4b68f02)
 
-Actualizar marcas http://localhost/proyectoPlataformas/public/index.php/marcas?id=2
-Al enviar como parámetro el id del registro elegido, seguido de la nueva información se actualizará, por cuestiones de ejemplo, se mostrará a modo de objeto JSON, con la respuesta del servidor.
-
     - **Actualizar marcas**
   - Endpoint: `/marcas?id=2`
   - JSON de ejemplo:
