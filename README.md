@@ -4,6 +4,14 @@
 Este proyecto es un API de gestión de ventas para una tienda de ropa. Permite administrar productos, usuarios, marcas y ventas, además de generar reportes útiles sobre el inventario y las marcas más vendidas.
 
 ---
+## Tecnologías Utilizadas
+
+- PHP (API REST)
+- MySQL (Base de datos relacional)
+- HTTP methods: `GET`, `POST`, `PUT`, `DELETE`
+
+
+---
 
 ## 📄 Descripción del Proyecto
 
